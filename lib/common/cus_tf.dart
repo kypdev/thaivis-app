@@ -17,6 +17,21 @@ Widget customTextField({
         prefixIcon: prefixIcon,
         labelText: label,
         suffixIcon: suffixIcon,
+        fillColor: Colors.white,
+        filled: true,
+        border: InputBorder.none,
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: Colors.transparent,
+          ),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: Colors.transparent,
+          ),
+          borderRadius: BorderRadius.circular(15),
+        ),
       ),
     ),
   );

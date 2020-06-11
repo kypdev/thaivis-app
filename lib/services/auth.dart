@@ -9,13 +9,20 @@ class Auth {
 
     var loginFlag = pref.getInt('loginFlag');
 
-    if(loginFlag == 1){
-
-    debugPrint('login screen');
-    }else{
+    if (loginFlag == 1) {
+      debugPrint('login screen');
+    } else {
       Navigator.pushReplacementNamed(context, '/login');
     }
 
     debugPrint('login: $loginFlag');
+  }
+
+  userRegister(context, loginType) {
+    if (loginType == 1) {
+      Navigator.pushNamed(context, '/register/user');
+    } else {
+      debugPrint('vis register');
+    }
   }
 }
